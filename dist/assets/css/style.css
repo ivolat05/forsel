@@ -2924,7 +2924,17 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
+}
+@media (max-width: 992px) {
+  .products__header {
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 572px) {
+  .products__header {
+    padding-bottom: 15px;
+  }
 }
 
 .products-title {
@@ -2943,9 +2953,53 @@ button {
   background: #101828;
   color: #FFF;
   border: 1px solid #101828;
+  padding: 20px 25px;
 }
 .products__btn:hover {
   color: #808080;
   border: 1px solid #00B754;
   background: #F5F7FF;
+}
+@media (max-width: 992px) {
+  .products__btn {
+    padding: 10px 15px;
+  }
+}
+
+.products__wrapp {
+  border-radius: 42px;
+  background: #F5F7FF;
+  padding: 55px 43px 60px 55px;
+}
+@media (max-width: 1400px) {
+  .products__wrapp {
+    padding: 40px 30px;
+    border-radius: 32px;
+  }
+}
+@media (max-width: 992px) {
+  .products__wrapp {
+    padding: 30px 20px;
+    border-radius: 22px;
+  }
+}
+@media (max-width: 572px) {
+  .products__wrapp {
+    padding: 15px;
+    border-radius: 15px;
+  }
+}
+
+.products {
+  padding-top: 145px;
+}
+@media (max-width: 992px) {
+  .products {
+    padding-top: 80px;
+  }
+}
+@media (max-width: 572px) {
+  .products {
+    padding-top: 30px;
+  }
 }

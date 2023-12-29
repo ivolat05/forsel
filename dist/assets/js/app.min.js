@@ -72,6 +72,7 @@ const productSwiper = () => {
 			320: {
 				slidesPerView: 1,
 				spaceBetween: 15,
+				autoHeight: true,
 			},
 
 			572: {
@@ -83,6 +84,7 @@ const productSwiper = () => {
 			992: {
 				slidesPerView: 3,
 				spaceBetween: 44,
+				autoHeight: false,
 			},
 		},
 	};
