@@ -55,3 +55,43 @@ const menu = () => {
 };
 menu();
 
+const productSwiper = () => {
+	const productSwiperWrapp = document.querySelector(".products__swiper");
+	const productSwiperInstal = {
+		slidesPerView: 1,
+		spaceBetween: 15,
+		autoHeight: true,
+		pagination: {
+			el: ".products__swiper-pagination",
+			type: "bullets",
+		},
+		autoplay: {
+			delay: 5000,
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 15,
+			},
+
+			572: {
+				autoHeight: false,
+				slidesPerView: 2,
+				spaceBetween: 30,
+			},
+
+			992: {
+				slidesPerView: 3,
+				spaceBetween: 44,
+			},
+		},
+	};
+	if (productSwiperWrapp) {
+		const swiperProduct = new Swiper(
+			productSwiperWrapp,
+			productSwiperInstal
+		);
+	}
+};
+productSwiper();
+
