@@ -3398,3 +3398,202 @@ button {
     margin-top: 25px;
   }
 }
+
+.reviews__box {
+  position: relative;
+  isolation: isolate;
+  padding-top: 275px;
+  padding-bottom: 130px;
+}
+.reviews__box::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 24, 40, 0.8)), to(rgba(16, 24, 40, 0.8)));
+  background: -o-linear-gradient(bottom, rgba(16, 24, 40, 0.8) 0%, rgba(16, 24, 40, 0.8) 100%);
+  background: linear-gradient(0deg, rgba(16, 24, 40, 0.8) 0%, rgba(16, 24, 40, 0.8) 100%);
+  z-index: -1;
+}
+@media (max-width: 1200px) {
+  .reviews__box {
+    padding-top: 130px;
+    padding-bottom: 90px;
+  }
+}
+@media (max-width: 992px) {
+  .reviews__box {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 572px) {
+  .reviews__box {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+.reviews__swiper {
+  overflow: hidden;
+}
+
+.reviews__box-btn {
+  width: 50px;
+  height: 50px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(208, 212, 218, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.reviews__box-btn svg,
+.reviews__box-btn img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 12px;
+  height: 23px;
+}
+@media (max-width: 992px) {
+  .reviews__box-btn svg,
+  .reviews__box-btn img {
+    width: 10px;
+    height: 15px;
+  }
+}
+@media (max-width: 572px) {
+  .reviews__box-btn svg,
+  .reviews__box-btn img {
+    width: 7px;
+    height: 10px;
+  }
+}
+.reviews__box-btn path {
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.reviews__box-btn:hover {
+  border: 1px solid #00B754;
+  background: #F5F7FF;
+}
+.reviews__box-btn:hover path {
+  stroke: #808080;
+}
+@media (max-width: 992px) {
+  .reviews__box-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 572px) {
+  .reviews__box-btn {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.reviews__container-btn {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 15px;
+  padding-top: 20px;
+  -ms-grid-columns: auto auto;
+  grid-template-columns: auto auto;
+  padding-right: 25px;
+}
+
+.reviews__box-header-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+@media (max-width: 1400px) {
+  .reviews__box-header-body {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.reviews__box-name {
+  color: #FFF;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.reviews__box-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.4fr 0.43fr;
+  grid-template-columns: 0.4fr 0.43fr;
+  gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 15px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+@media (max-width: 1400px) {
+  .reviews__box-header {
+    margin-right: 0;
+    margin-left: auto;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+  }
+}
+@media (max-width: 992px) {
+  .reviews__box-header {
+    gap: 20px;
+  }
+}
+@media (max-width: 772px) {
+  .reviews__box-header {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+}
+
+.reviews__box-text,
+.reviews__box-title {
+  color: #fff;
+}
+
+.reviews {
+  padding-top: 80px;
+}
+@media (max-width: 572px) {
+  .reviews {
+    padding-top: 30px;
+  }
+}

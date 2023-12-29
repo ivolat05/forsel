@@ -97,3 +97,40 @@ const productSwiper = () => {
 };
 productSwiper();
 
+const reviewsSwiper = () => {
+	const reviewsSwiperWrapp = document.querySelector(".reviews__swiper");
+	const reviewsSwiperInstal = {
+		slidesPerView: 1,
+		autoHeight: true,
+		loop: true,
+	};
+	if (reviewsSwiperWrapp) {
+		const swiperReviews = new Swiper(
+			reviewsSwiperWrapp,
+			reviewsSwiperInstal
+		);
+		nextSlide(swiperReviews);
+	}
+};
+reviewsSwiper();
+
+function nextSlide(swiperReviews) {
+	const btn = document.querySelectorAll(".reviews__box-btn");
+	if (btn) {
+		btn.forEach((item) => {
+			item.addEventListener("click", () => {
+				if (swiperReviews) {
+					switch (item.classList.contains("reviews-next")) {
+						case true:
+							swiperReviews.slideNext();
+							break;
+						case false:
+							swiperReviews.slidePrev();
+							break;
+					}
+				}
+			});
+		});
+	}
+}
+
