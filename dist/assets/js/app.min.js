@@ -134,3 +134,46 @@ function nextSlide(swiperReviews) {
 	}
 }
 
+const chooseSwiper = () => {
+	const chooseSwiperWrapp = document.querySelector(".choose__swiper");
+	const chooseSwiperInstal = {
+		slidesPerView: 4,
+		spaceBetween: 65,
+		mousewheel: true,
+		scrollbar: {
+			el: ".choose__line",
+			draggable: true,
+		},
+		autoplay: {
+			delay: 5000,
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			600: {
+				slidesPerView: 3,
+				spaceBetween: 15,
+			},
+			772: {
+				slidesPerView: 4,
+				spaceBetween: 15,
+			},
+
+			992: {
+				slidesPerView: 4,
+				spaceBetween: 30,
+			},
+			1400: {
+				slidesPerView: 4,
+				spaceBetween: 65,
+			},
+		},
+	};
+	if (chooseSwiperWrapp) {
+		const swiperChoose = new Swiper(chooseSwiperWrapp, chooseSwiperInstal);
+	}
+};
+chooseSwiper();
+
