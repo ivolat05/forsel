@@ -1279,6 +1279,25 @@ button {
   }
 }
 
+.title-28 {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 992px) {
+  .title-28 {
+    font-size: 23px;
+    line-height: 110%;
+  }
+}
+@media (max-width: 572px) {
+  .title-28 {
+    font-size: 16px;
+  }
+}
+
 .title-24 {
   color: #000;
   font-size: 24px;
@@ -1443,6 +1462,20 @@ button {
 
 .label-input:checked + .label-radio::before {
   opacity: 1;
+}
+
+.border-30 {
+  border-radius: 30px;
+}
+@media (max-width: 992px) {
+  .border-30 {
+    border-radius: 20px;
+  }
+}
+@media (max-width: 572px) {
+  .border-30 {
+    border-radius: 15px;
+  }
 }
 
 /*header*/
@@ -5458,4 +5491,280 @@ button {
 .choose__swiper-slide img {
   width: 100%;
   aspect-ratio: 245/88;
+}
+
+/*dealer*/
+.cooperation {
+  background: url("../../assets/img/cooperation.png") no-repeat center center/cover;
+  padding-top: 40px;
+  padding-bottom: 44px;
+}
+
+.cooperation__wrapp {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .cooperation__wrapp {
+    display: block;
+    position: relative;
+    isolation: isolate;
+  }
+}
+
+.cooperation__wrapp-img {
+  height: 100%;
+}
+.cooperation__wrapp-img img {
+  height: 100%;
+  aspect-ratio: 326/483;
+}
+@media (max-width: 992px) {
+  .cooperation__wrapp-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.cooperation--container {
+  padding-left: 115px;
+  padding-right: 35px;
+}
+@media (max-width: 1400px) {
+  .cooperation--container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.cooperation__subtitle {
+  color: #FFF;
+  font-family: "Montserrat";
+  padding-left: 20px;
+}
+@media (max-width: 992px) {
+  .cooperation__subtitle {
+    padding-left: 10px;
+  }
+}
+
+.cooperation-title {
+  color: #FFF;
+  font-family: "Inter";
+  font-size: 144.72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-left: 7px;
+}
+@media (max-width: 992px) {
+  .cooperation-title {
+    padding-left: 5px;
+    font-size: 100px;
+    line-height: 110%;
+  }
+}
+@media (max-width: 572px) {
+  .cooperation-title {
+    font-size: 70px;
+  }
+}
+
+.cooperation-text {
+  color: #FFF;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+@media (max-width: 992px) {
+  .cooperation-text {
+    padding-left: 10px;
+  }
+}
+
+.cooperation-subtext {
+  color: #FFF;
+  font-family: "Montserrat";
+  font-weight: 400;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+@media (max-width: 992px) {
+  .cooperation-subtext {
+    padding-left: 10px;
+  }
+}
+
+.cooperation-form {
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+  border-radius: 100px;
+  background: #F5F5F5;
+  padding: 9px 8px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+  grid-template-columns: 1fr auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 490px) {
+  .cooperation-form {
+    -ms-grid-columns: 58% auto;
+    grid-template-columns: 58% auto;
+  }
+}
+
+.cooperation-input {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+  background: none;
+}
+.cooperation-input::-webkit-input-placeholder {
+  color: #BEBEBE;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cooperation-input::-moz-placeholder {
+  color: #BEBEBE;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cooperation-input:-ms-input-placeholder {
+  color: #BEBEBE;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cooperation-input::-ms-input-placeholder {
+  color: #BEBEBE;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cooperation-input::placeholder {
+  color: #BEBEBE;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 992px) {
+  .cooperation-input::-webkit-input-placeholder {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .cooperation-input::-moz-placeholder {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .cooperation-input:-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .cooperation-input::-ms-input-placeholder {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .cooperation-input::placeholder {
+    font-size: 18px;
+    line-height: 110%;
+  }
+}
+@media (max-width: 992px) {
+  .cooperation-input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .cooperation-input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .cooperation-input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .cooperation-input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .cooperation-input::placeholder {
+    font-size: 16px;
+  }
+}
+@media (max-width: 992px) {
+  .cooperation-input {
+    font-size: 18px;
+    line-height: 110%;
+  }
+}
+@media (max-width: 992px) {
+  .cooperation-input {
+    font-size: 16px;
+  }
+}
+@media (max-width: 490px) {
+  .cooperation-input {
+    font-size: 10px;
+    line-height: 110%;
+    padding: 10px 0px;
+  }
+}
+
+.cooperation-input,
+.cooperation-btn {
+  border-radius: 100px;
+  padding: 19px 20px;
+}
+
+.cooperation-btn {
+  color: #fff;
+  background: #101828;
+  border: 1px solid #101828;
+}
+.cooperation-btn:hover {
+  color: #808080;
+  border: 1px solid #00B754;
+  background: #F5F7FF;
+}
+@media (max-width: 490px) {
+  .cooperation-btn {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+
+.cooperation__box {
+  padding-top: 30px;
+  max-width: 665px;
+}
+@media (max-width: 992px) {
+  .cooperation__box {
+    padding-top: 0;
+  }
 }
